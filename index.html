@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,50 +7,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="Homepage.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+
   <title>Nescafe</title>
   <style>
-   #bgVideo {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  z-index: -1; /* behind all other content */
-  background: transparent; /* removes any default background */
-}
+    #bgVideo {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      z-index: -1;
+      background: transparent;
+    }
 
-</style>
+    /* Center align container content */
+    .centered-content {
+      text-align: center;
+      margin-top: 80px; /* space between navbar and this section */
+    }
+
+    /* Add spacing below the heading */
+    .centered-content h2 {
+      margin-bottom: 30px;
+      font-weight: 600;
+    }
+
+    /* Restrict iframe max width and center it */
+    .embed-responsive {
+      max-width: 600px;
+      margin: 0 auto; /* center horizontally */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* optional subtle shadow */
+      border-radius: 8px; /* optional rounded corners */
+    }
   </style>
 </head>
-<ul>
-  <li><a href="index.html#Explore.html">Explore the Series ➡️</a></li>
-  <li><a href="index.html#Explore Our Coffees">Explore Our Coffees</a></li>
-</ul>
 
 <body>
-   <!-- Navigation bar -->
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <nav class="navbar">
-    <div class="logo">Nescafe</div>
-    <ul>
-        <li><a href="index.html"></a></li>
-        <li><a href="Homepage.html">Home</a></li>
-        <li><a href="aboutus.html">About Us</a></li>
-        <li><a href="Contactme.html">Contact</a></li>
-        <li><a href="feedback.html">Feedback</a></li>
-    </ul>
-</nav>
-  <div class="container my-4">
-  <h2>Watch Our Story</h2>
-  <div class="embed-responsive embed-responsive-16by9">
-    <iframe class="embed-responsive-item" src="https://i.makeagif.com/media/7-25-2017/Oc_up2.gif" allowfullscreen></iframe>
-  </div>
-</div>
+  <!-- Navigation bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <div class="navbar-brand">Nescafe</div>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html"></a></li>
+        <li class="nav-item"><a class="nav-link" href="Homepage.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="Contactme.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+      </ul>
+    </div>
+  </nav>
 
-  
+  <div class="container centered-content">
+    <h2>Watch Our Story</h2>
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item" src="https://i.makeagif.com/media/7-25-2017/Oc_up2.gif" allowfullscreen></iframe>
+    </div>
+  </div>
 </body>
 
 </html>
