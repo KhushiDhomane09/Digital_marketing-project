@@ -2,56 +2,78 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="Homepage.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
   <title>Nescafe</title>
+
   <style>
-    #bgVideo {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      object-fit: cover;
-      z-index: -1;
-      background: transparent;
+    /* Navbar spacing from top */
+    body {
+      margin: 0;
+      padding: 0;
     }
 
-    /* Center align container content */
-    .centered-content {
-      text-align: center;
-      margin-top: 80px; /* space between navbar and this section */
+    /* Navbar styling */
+    .navbar {
+      background-color: #343a40;
+      padding: 1rem 2rem;
     }
 
-    /* Add spacing below the heading */
-    .centered-content h2 {
+    .navbar .navbar-brand {
+      color: #f5c6a5;
+      font-weight: bold;
+      font-size: 1.8rem;
+    }
+
+    .navbar .nav-link {
+      color: white !important;
+      font-weight: 500;
+      margin-left: 1rem;
+    }
+
+    /* Container to center content vertically & horizontally */
+    .center-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* center horizontally */
+      padding: 80px 20px 40px; /* top space from navbar + bottom padding */
+      background-color: #f7b68e;
+      min-height: 60vh; /* optional: control height */
+    }
+
+    .center-section h2 {
       margin-bottom: 30px;
       font-weight: 600;
+      color: #2c1e17;
+      font-family: Arial, sans-serif;
     }
 
-    /* Restrict iframe max width and center it */
-    .embed-responsive {
+    /* Limit iframe width and center */
+    .gif-wrapper {
+      width: 100%;
       max-width: 600px;
-      margin: 0 auto; /* center horizontally */
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* optional subtle shadow */
-      border-radius: 8px; /* optional rounded corners */
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .gif-wrapper iframe {
+      width: 100%;
+      height: 340px; /* fixed height */
+      border: none;
+      display: block;
     }
   </style>
 </head>
 
 <body>
-  <!-- Navigation bar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <div class="navbar-brand">Nescafe</div>
+
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="#">Nescafe</a>
+    <div class="collapse navbar-collapse">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item"><a class="nav-link" href="index.html"></a></li>
         <li class="nav-item"><a class="nav-link" href="Homepage.html">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
         <li class="nav-item"><a class="nav-link" href="Contactme.html">Contact</a></li>
@@ -60,12 +82,13 @@
     </div>
   </nav>
 
-  <div class="container centered-content">
+  <div class="center-section">
     <h2>Watch Our Story</h2>
-    <div class="embed-responsive embed-responsive-16by9">
-      <iframe class="embed-responsive-item" src="https://i.makeagif.com/media/7-25-2017/Oc_up2.gif" allowfullscreen></iframe>
+    <div class="gif-wrapper">
+      <iframe src="https://i.makeagif.com/media/7-25-2017/Oc_up2.gif" allowfullscreen></iframe>
     </div>
   </div>
+
 </body>
 
 </html>
